@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">C天气</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="today_air_quality_desc">空气</string>
+    <string name="today_weather">-</string>
+    <string name="today_date">--</string>
+    <string name="today_temperature">--</string>
+    <string name="geographical_location">--</string>
+    <string name="unit">℃</string>
+</resources>

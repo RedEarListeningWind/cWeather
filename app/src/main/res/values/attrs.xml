@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AutofitTextView">
+        <!-- 最小的文本大小. -->
+        <attr name="minTextSize" format="dimension" />
+        <!-- 用于计算适合于其范围内的正确文本大小的精度。精度越低，精度越高，需要的时间也就越多。 -->
+        <attr name="precision" format="float" />
+        <!-- 定义是否自动调整文本大小以适应视图的边界。 -->
+        <attr name="sizeToFit" format="boolean" />
+    </declare-styleable>
+</resources>

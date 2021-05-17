@@ -1,0 +1,10 @@
+##########################################################
+>>> GET http://URL HTTP/1.1
+
+<<< error [cost: 2384ms]
+----------------
+There was an error accessing to URL: http://URL
+
+java.net.UnknownHostException: URL
+
+

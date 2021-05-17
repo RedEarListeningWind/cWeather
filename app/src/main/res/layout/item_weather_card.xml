@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_view_item_weather_card_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/location_switch_location_external_card_margin_horizontal"
+    android:layout_marginVertical="@dimen/location_switch_location_external_card_margin_vertical"
+    app:contentPadding="0dp"
+    android:elevation="@dimen/location_switch_location_external_card_elevation"
+    app:cardCornerRadius="@dimen/location_switch_location_external_card_corner_radius"
+    app:cardMaxElevation="@dimen/location_switch_location_external_card_interior_max_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <!-- region 引导线 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+        <!-- top 引导线 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_item_weather_card_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+        <!-- bottom 引导线 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_item_weather_card_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+        <!-- left 引导线 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_item_weather_card_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0" />
+        <!-- right 引导线 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_item_weather_card_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+        <!-- endregion -->
+        <!-- 天气图标 -->
+        <ImageView
+            android:id="@+id/image_view_item_weather_card_weather_icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_tq_23_tai_yang_ri_chu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHeight_percent="1"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_item_weather_card_left"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!-- 最低温度 -->
+
+        <TextView
+            android:id="@+id/text_view_item_weather_card_minimum_temperature"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/content_color_white"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_item_weather_card_bottom"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/image_view_item_weather_card_weather_icon"
+            app:layout_constraintRight_toLeftOf="@id/text_view_item_weather_card_separator"
+            app:layout_constraintTop_toTopOf="@id/guideline_item_weather_card_top" />
+
+        <!-- 分隔符 -->
+
+        <TextView
+            android:id="@+id/text_view_item_weather_card_separator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="/"
+            android:textColor="@color/content_color_white"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_item_weather_card_bottom"
+            app:layout_constraintDimensionRatio="1:2"
+            app:layout_constraintLeft_toRightOf="@id/text_view_item_weather_card_minimum_temperature"
+            app:layout_constraintRight_toLeftOf="@id/text_view_item_weather_card_maximum_temperature"
+            app:layout_constraintTop_toTopOf="@id/guideline_item_weather_card_top" />
+        <!-- 最高温度 -->
+        <TextView
+            android:id="@+id/text_view_item_weather_card_maximum_temperature"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/content_color_white"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_item_weather_card_bottom"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/text_view_item_weather_card_separator"
+            app:layout_constraintRight_toLeftOf="@id/text_view_item_weather_card_date"
+            app:layout_constraintTop_toTopOf="@id/guideline_item_weather_card_top" />
+
+        <TextView
+            android:id="@+id/text_view_item_weather_card_date_week"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_vertical|right"
+            android:maxLines="1"
+            android:textColor="@color/content_color_white"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_item_weather_card_bottom"
+            app:layout_constraintRight_toRightOf="@id/guideline_item_weather_card_right"
+            app:layout_constraintTop_toTopOf="@id/guideline_item_weather_card_top" />
+
+        <TextView
+            android:id="@+id/text_view_item_weather_card_date"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="top|right"
+            android:maxLines="1"
+            android:textColor="@color/content_color_white"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintRight_toRightOf="@id/guideline_item_weather_card_right"
+            app:layout_constraintTop_toTopOf="@id/guideline_item_weather_card_bottom" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

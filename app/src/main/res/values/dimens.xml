@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <dimen name="card_margin">1dp</dimen>-->
+<!--    <dimen name="card_margin_vertical">8dp</dimen>-->
+<!--    <dimen name="card_margin_top">3dp</dimen>-->
+<!--    <dimen name="card_margin_bottom">10dp</dimen>-->
+<!--    <dimen name="card_margin_horizontal">3dp</dimen>-->
+<!--    <dimen name="card_margin_left">@dimen/card_margin_horizontal</dimen>-->
+<!--    <dimen name="card_margin_right">@dimen/card_margin_horizontal</dimen>-->
+
+<!--    <dimen name="card_padding_horizontal">1dp</dimen>-->
+<!--    <dimen name="card_padding_vertical">5dp</dimen>-->
+
+    <!-- 卡片高度 -->
+<!--    <dimen name="card_elevation">0dp</dimen>-->
+    <!-- 卡最大高度 -->
+<!--    <dimen name="card_max_elevation">0dp</dimen>-->
+    <!-- 卡片圆角半径 -->
+<!--    <dimen name="card_corner_radius">8dp</dimen>-->
+
+
+<!--    &lt;!&ndash; ... &ndash;&gt;-->
+<!--    <dimen name="item_weather_card_text_size">0.4</dimen>-->
+
+
+    <!-- region 切换位置页面 今天的天气内卡片 -->
+    <dimen name="location_switch_location_today_card_interior_margin_horizontal">3dp</dimen>
+    <dimen name="location_switch_location_today_card_interior_margin_top">3dp</dimen>
+    <dimen name="location_switch_location_today_card_interior_margin_bottom">10dp</dimen>
+
+    <!-- 卡片圆角半径 -->
+    <dimen name="location_switch_location_today_card_interior_corner_radius">8dp</dimen>
+    <!-- 卡片高度 -->
+    <dimen name="location_switch_location_today_card_interior_elevation">0dp</dimen>
+    <!-- 卡片最大高度 -->
+    <dimen name="location_switch_location_today_card_interior_max_elevation">0dp</dimen>
+    <!-- 文字垂直方向 内边距 -->
+    <dimen name="location_switch_location_today_text_padding_vertical">5dp</dimen>
+    <!-- endregion -->
+
+    <!-- region 切换位置页面 第一层卡片 -->
+    <dimen name="location_switch_location_external_card_margin_horizontal">10dp</dimen>
+    <dimen name="location_switch_location_external_card_margin_top">10dp</dimen>
+    <dimen name="location_switch_location_external_card_margin_bottom">5dp</dimen>
+    <dimen name="location_switch_location_external_card_margin_vertical">5dp</dimen>
+<dimen name="location_switch_location_today_bottom">15dp</dimen>
+
+    <dimen name="location_switch_location_external_card_corner_radius">8dp</dimen>
+    <dimen name="location_switch_location_external_card_elevation">0dp</dimen>
+    <dimen name="location_switch_location_external_card_interior_max_elevation">0dp</dimen>
+
+<!--    <dimen name="location_switch_location_external_card_margin_horizontal">10dp</dimen>-->
+<!--    <dimen name="location_switch_location_external_card_margin_horizontal">10dp</dimen>-->
+<!--    <dimen name="location_switch_location_external_card_margin_horizontal">10dp</dimen>-->
+<!--    <dimen name="location_switch_location_external_card_margin_horizontal">10dp</dimen>-->
+<!--    <dimen name="location_switch_location_external_card_margin_horizontal">10dp</dimen>-->
+<!--    <dimen name="location_switch_location_external_card_margin_horizontal">10dp</dimen>-->
+<!--    <dimen name="location_switch_location_external_card_margin_horizontal">10dp</dimen>-->
+<!--    <dimen name="location_switch_location_external_card_margin_horizontal">10dp</dimen>-->
+<!--    <dimen name="location_switch_location_external_card_margin_horizontal">10dp</dimen>-->
+<!--    <dimen name="location_switch_location_external_card_margin_horizontal">10dp</dimen>-->
+</resources>
